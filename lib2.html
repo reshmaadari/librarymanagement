@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1>librRY MANAGEMENT</h1>
+    <script src="library2.js"></script>
+</head>
+
+<body>
+    <script>
+        var books = [{}];
+        var i = 0;
+        var t = 1;
+        
+        while (t)
+        {
+            alert("1.bookentry   2.bookassign   3.avilable books   4.exit");
+            var ch = prompt("enter your choice");
+            switch (ch) {
+                case 1:
+                    var bname = prompt("enter book name");
+                    var aname = prompt("enter author name");
+                    bookEntry(bname, aname); break;
+                case 2:
+                    bookassign();
+                    break;
+                case 3:
+                    showbook();
+                    break;
+                default:t = 0;
+            }
+            if(ch==4)
+              {  break;}
+        }
+    </script>
+</body>
+
+</html>
